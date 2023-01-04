@@ -54,3 +54,9 @@ Saturation - Se quer a cor mais fraca ou mais forte
 Lumiance -  50% é a cor real 
             0% é a cor sem luz
             100% é a cor com muita luz
+
+* Global Values:
+color: inheritr; ( Herda a cor do elemento anterior )
+color: initial; ( Volta a sua cor inicial )
+color: unset; ( Pega a cor do contexto )
+
