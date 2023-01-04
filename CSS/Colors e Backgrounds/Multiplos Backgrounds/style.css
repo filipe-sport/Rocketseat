@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+}
+main{
+    color: purple;
+    padding: 8px;
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,0,0,0.4)) , 
+    url(https://cdn-images-1.medium.com/max/92/1*TkXVfLTwsHdwpUEjGzdi9w@2x.jpeg) no-repeat right top / 50px border-box content-box fixed;
+}

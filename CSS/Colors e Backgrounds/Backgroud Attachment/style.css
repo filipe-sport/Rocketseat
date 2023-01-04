@@ -1,15 +1,25 @@
 * {
     margin: 0;
+    
 }
 
 header {
+    /* width: 400px;
     height: 100px;
-    border: 7px double red;
+    border: 7px double red; */
+    
+}   
+
+main{
+    width: 800px;
+    color: white;
     background-color: rgb(55, 100, 50);
     background-image: url(https://cdn-images-1.medium.com/max/92/1*TkXVfLTwsHdwpUEjGzdi9w@2x.jpeg);
     background-repeat: no-repeat;
-    background-position: bottom left;
-    background-size: 5em 60%;
-    background-origin: padding-box;
+    background-position: left;
+    background-size: contain;
+    background-origin: content-box;
     background-clip: content-box;
-}   
+    background-attachment: fixed;
+    
+}
