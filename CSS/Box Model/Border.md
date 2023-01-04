@@ -18,3 +18,11 @@ div{
     border: outset #f33; (style | color)
     border: medium dashed green; (width | style | color)
 }
+
+Outline
+
+- difere em 4 sentidos:
+    - Não modifica o tamanho da caixa, pois não é parte do Box Model
+    - Poderá ser diferente de retangular
+    - Não permite ajustes individuais
+    - Mais usado pelo user agent para acessibilidade
