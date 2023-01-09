@@ -19,3 +19,6 @@ Grid
 
 * Fixed: 
 - Elemento fica fixo na página
+
+Element Stacking (empilhamento de elementos)
+- z - index
