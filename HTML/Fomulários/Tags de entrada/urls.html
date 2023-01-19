@@ -32,6 +32,33 @@
             (o id de uma tag <datalist> que está no mesmo documento)
             (<datalist> irá conter uma lista de valores pré definidos a fim de sugerir ao usuário, quais valores estão disponíveis)
             (os valores do <datalist> que não forem compatíveis com o campo, não serão paresentados como sugestão)
+            (o list NÃO funciona corretamente com o value)
+        - speelcheck
+            (habilita a verificação ortografica para este input)
     -->
+
+    
+
+    <form action="">
+        <input type="url" 
+        placeholder="http://example.com" 
+        value="http://example.com" 
+        required        
+        minlength="12"
+        maxlength="256"
+        size="30"
+        pattern=".*\.com\.br.*"
+        title="Somente domínios .com.br serão aceitos"
+        list="urlsdata"
+        spellcheck="true">
+        <button type="submit">Enviar</button>
+    </form>
+    <datalist id="urlsdata">
+        <option>http://meusite.com.br</option>
+        <option>https://meusite.com.br</option>
+    </datalist>
+
+    
+   
 </body>
 </html>
