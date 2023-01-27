@@ -1,4 +1,4 @@
-Border ( e outline)
+* Border ( e outline)
 
 - As bordas das caixas quanto ao seu estilo, largura e coloração.
 
