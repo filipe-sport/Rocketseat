@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    height:90vh;
+    gap: 1rem;
+}
+.coluna1{
+    border: 1px solid black;
+    flex-basis: 25%;
+    /* flex: 1; */
+}
+.coluna2{
+    border: 1px solid black;
+    flex: 1;
+    /* flex: 4; */
+}

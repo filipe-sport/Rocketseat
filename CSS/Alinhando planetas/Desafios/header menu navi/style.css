@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;    
+    padding: 20px;
+    justify-content:space-between;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: lightgray;
+}
+a{
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 0.8rem;
+}
+
+nav ul li:last-child{
+    border-radius: 3px;
+    padding: 8px;
+    background-color:#7056EF ;
+    color: white;
+}
+
