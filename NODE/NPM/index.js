@@ -1,0 +1,1 @@
+console.log("rodando com node via script");
