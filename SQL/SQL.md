@@ -28,7 +28,7 @@
 
 - Selecionando campos específicos, WHERE tenha condições pré determinadas
 
-SELECT campo1 , campo2 FROM tabela WHERE campo like "%condição%"
+- SELECT campo1 , campo2 FROM tabela WHERE campo like "%condição%"
 
 * Operadores Relacionais
 
@@ -41,17 +41,32 @@ SELECT campo1 , campo2 FROM tabela WHERE campo like "%condição%"
 
 * Operadores Matemáticos
 - Assim como os operadores relacionais, os operadores matemáticos obedecem o retorno das operações e são usados juntamente com o comando WHERE: 
-    - SELECT * FROM tabela WHERE campo 1 + 1
-    - SELECT * FROM tabela WHERE campo 2 - 1
-    - SELECT * FROM tabela WHERE campo 1 * 1
-    - SELECT * FROM tabela WHERE campo 1 / 1
-    - SELECT * FROM tabela WHERE campo 3 % 2
+    - SELECT * FROM tabela WHERE campo (2 - 1)
+    - SELECT * FROM tabela WHERE campo (1 + 1)
+    - SELECT * FROM tabela WHERE campo (1 * 1)
+    - SELECT * FROM tabela WHERE campo (1 / 1)
+    - SELECT * FROM tabela WHERE campo (3 % 2)
 
 * Operadores Lógicos
+    # AND
  - SELECT * FROM tabela WHERE  campo1 like "J%" AND campo2...
+    # OR
+ - SELECT * FROM tabela WHERE  campo1 like "% J %" OR campo2...
+    # BETWEEN / NOT BETWEEN 
+ - SELECT * FROM tabela WHERE  campo1 BETWEEN  (condição1) and (condição2)...
+ - SELECT * FROM tabela WHERE  campo1 NOT BETWEEN  (condição1) and (condição2)...
+    # IN / NOT IN
+ - SELECT * FROM tabela WHERE campo IN (condição)
+ - SELECT * FROM tabela WHERE campo NOT IN (condição)
+    # IS NULL / IS NOT NULL
+ - SELECT * FROM tabela WHERE campo IS NULL
+ - SELECT * FROM tabela WHERE campo IS NOT NULL
 
- - SELECT * FROM tabela WHERE  campo1 like "J%" OR campo2...
-
-
-
-
+   # INSER TO
+ - INSERT INTO tabela(campo1, campo2,...) VALUES ("text/string", number, ...)
+   # UPDATE
+ - UPDATE tabela SET campo1 = ("text/string" ou number), campo2 = ("text/string" ou number),... WHERE (campo primary key) = "string"/number
+ # Obs: SEMPRE USA-SE COM O WHERE
+   # DELETE
+ - DELETE FROM tabela WHERE (campo primary key) = "string"/number
+ # Obs: SEMPRE USA-SE COM O WHERE
