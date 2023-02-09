@@ -6,7 +6,7 @@
 ["a", 10, true, "batatinha quando nasce..."]
 
 - Características: 
-    - Acesso pelo INDEX
+    - Acesso pelo INDEX (index sempre por padrão começa por [0])
     - Respeita a ordem de inserção dos elementos
     - Aceita valores duplicados
     - Dependendo do tamanho do array, para encontrar e/ou deletar um elemento, será necessário um uso maior de perfomance.
