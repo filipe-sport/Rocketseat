@@ -48,7 +48,9 @@ SELECT campo1 , campo2 FROM tabela WHERE campo like "%condição%"
     - SELECT * FROM tabela WHERE campo 3 % 2
 
 * Operadores Lógicos
+ - SELECT * FROM tabela WHERE  campo1 like "J%" AND campo2...
 
+ - SELECT * FROM tabela WHERE  campo1 like "J%" OR campo2...
 
 
 
