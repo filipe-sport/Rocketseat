@@ -42,8 +42,8 @@ const stack = new Stack()
 stack.push("learning")
 stack.push("data")
 console.log(stack.push("structures"));
-console.log(stack.peek);
+console.log(stack.peek());
 // remover
 stack.pop();
-console.log(stack.pop);
+console.log(stack.pop());
 console.log(stack.peek());

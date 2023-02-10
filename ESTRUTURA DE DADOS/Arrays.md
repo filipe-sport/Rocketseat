@@ -16,3 +16,5 @@
 - São dinâmicos
 - Você poderá ter dados de diferentes tipos misturados dentro de um Array. Strings, numbers, booleans, objetos, funções e até outros arrays.
 - Existem muitos métodos já implementados ( push(), pop(), find(), filter(), ...)
+
+

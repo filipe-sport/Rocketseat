@@ -35,3 +35,12 @@
 1) - Modelar a estrutura;
 2) - Dar vida à estrutura (instanciar essa estrutura);
 3) - Criar as funcionalidades dessa estrutura (Ex: inserir, excluir, buscar, exibir, ...)
+
+# Visao Geral
+- Usamos Estrutura de Dados para gerenciar os dados, as informações da nossa aplicação
+- Organizar, ordenar, buscar, são algumas funcionalidades básicas
+- Melhorar a escrita de algoritmos
+- Melhorar a eficiência dos nossos aplicativos
+- Existem muitas estruturas a serem estudadas
+
+* Estrutura de dados é um assunto um pouco desafiador, especialmente para quem está no começo da jornada. Mas como qualquer outra habilidade, com o passar do tempo e prática diária, pode-se entender cada vez melhor.
