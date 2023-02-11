@@ -156,3 +156,93 @@ class Moto extends Veiculo {
         this.rodas = 2;
     }
 }
+
+# Polimorfismo
+
+- Quando um objeto estende de outro (herança) talvez haja a necessidade de reescrever uma ou mais características (atributos e métodos) nesse novo Objeto.
+- Recriamos então um método (ou mais) da classe herdada.
+- Polimorfismo significa muitas formas.
+
+# Polimorfismo com JavaScript
+
+class Atleta {
+    peso;
+    categoria;
+    constructor(peso){  
+        this.peso =peso;
+    }
+    definirCategoria(){
+        if (this.peso <= 50){
+            this.categoria = "infantil";
+        }
+        else if (this.peso <= 65 ){
+            this.categoria = "juvenil";
+        }
+        else{
+            this.categoria = "adulto";
+        }
+    }
+}
+
+class Lutador extends Atleta {
+    constructor(peso){
+        super(peso);
+    }
+    if(this.peso <= 54){
+        this.categoria = "pluma";
+    }
+    else if (this.peso <= 60){
+        this.categoria = "leve";
+    }
+    else if (this.peso <= 75){
+        this.categoria = "meio-leve";  
+    else{
+        this.categoria = "pesado";
+    }
+    }
+}
+
+# Abstração
+
+- Tenplate ou identidade de uma classe que será constrída no futuro;
+- Atributos e métodos podem ser criados na classe de Abstração
+- A implementação dos métodos e atributos, só poderá ser feita na classe que irá herdar essa Abstração
+
+# Abstração com Código JavaScript
+
+class Parafuso {
+    constructor(){
+        if (this.constructor === Parafuso)
+            throw new Error("Classe abstrata, não pode ser instanciada");
+    }
+    get tipo(){
+        throw new Error("Método "get tipo()" precisa ser implementado");    
+    }
+}
+
+class Fenda extends Parafuso{
+    constructor(){
+        super();
+    }
+    get tipo(){
+        return "Fenda";
+}
+
+class Philips extends Parafuso{
+    constructor(){
+        super();
+    }
+    get tipo(){
+        return "philips"
+    }
+}
+class Allen extends Parafuso{}
+
+<!-- criar e usar -->
+new Parafuso() <!--Classe abstrata não pode ser instanciada -->
+let fenda = new Fenda();
+let philips = new Philips();
+let allen = new Allen();
+
+console.log(fenda.tipo, philips.tipo);
+console.log(allen.tipo); <!-- Método "get tipo()" precisa ser implementado (colocado as devidas características, assim como as classes fenda e philips) -->
