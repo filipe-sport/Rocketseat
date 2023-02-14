@@ -1,6 +1,7 @@
 /*
 // Gerando um número randômico
 const random = (number, Math) => Math.floor(Math.random() * number);
+// Note que o Math e o number só poderão ser usados no escopo da função pois foi declarado como argumento
 */
 
 //Recursividade

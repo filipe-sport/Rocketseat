@@ -19,6 +19,8 @@
     - Não ira guardar nenhum estado
 
 * First-Class Functions
-
+- Podem estar em qualquer lugar, inclusive, como parâmetro de outras funções.
+- A função poderá ser entendida como uma variável.
+    
 * High-Order Funcions
 * Compisição de Funções
