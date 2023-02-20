@@ -1,0 +1,26 @@
+# HTTP Methods
+
+- Define um conjunto de métodos HTTP
+- Indica a ação que o cliente deseja operar
+- Podem ser chamados de verbos HTTP
+- Cada um possui a sua semânticas
+- Características
+    - Seguro
+        - Não altera o estado do servidor
+        - Somente leitura
+        - Clente não solicita alterações
+        - Não há carga extra para o servirdor
+        - O servidor é responsável em manter o método seguro
+        - Quais são?
+            - GET => GET / search.html HTTP/1.1
+            - HEAD
+            - OPTIONS
+    - Idempotente
+        - Ao executar o método, a resposta deverá ser sempre a mesma
+        - Status code poserá ser diferente
+        - O servidor tem a responsabilidade de retornar dados da mesma maneira
+        - Essa especificação não é garantia de que todos os servidores irão aplicar o conceito corretamente
+        - Quais são?
+            - Todos os seguros são idempotentes
+            - PUT
+            - DELETE

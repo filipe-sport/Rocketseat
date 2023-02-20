@@ -1,0 +1,3 @@
+- O Servidor, que é uma máquina em algum lugar do mundo preparada para lidar com as requisições do cliente e mandar uma reposta.
+- Vários servidores podem se apresentar como um único computador e podem ter vários computadores se apresentando como um servidor.
+- A resposta sempre tem um Status Code(200, 404, 500), e pode ter headers e body.
