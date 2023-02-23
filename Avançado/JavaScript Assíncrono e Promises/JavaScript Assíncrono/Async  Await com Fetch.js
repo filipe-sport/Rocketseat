@@ -1,34 +1,49 @@
-/* Async / Await
-    - Manerio de escrever promises
-    - Syntactic Suger
+/* 
+fetch('https://api.github.com/users/maykbrito')
+.then(response =>response.json()) // RESPOSTA EM JSON
+.then(data =>fetch(data.repos_url)) //NOVO FETCH
+.then(resp => resp.json()) // RESPOSTA EM JSON
+.then(d => console.log(d))
+.catch(err =>console.error(err))
+.finally(() => console.log('final'))
 */
 
-const promessa = new Promise (function (resolve, reject){
-    //return resolve('ok')
-    return reject ('error') 
-})
-
-// promessa
-//     .then(function (response){
-//         console.log(response);
-//     })
-//     .catch(function (error){
-//         console.log(error);
-//     })
-//     .finally(function () {console.log('sempre irei executar')})
-
-// o trecho de código acima comentado pode ser substituído pelo codigo a seguir: 
 async function start(){
+   const response = await fetch('https://api.github.com/users/maykbrito')
+   const user = await response.json()
+   const reposResponse = await fetch(user.repos_url)
+   const repos = await reposResponse.json()
+   console.log(repos)
+}
+
+start()
+
+// OU
+
+async function start(){
+
     try{
-        const result = await promessa
-    console.log(result);
+        const response = await fetch('https://api.github.com/users/maykbrito')
+        const user = await response.json()
+        const reposResponse = await fetch(user.repos_url)
+        const repos = await reposResponse.json()
+        console.log(repos)
     }
     catch(err){
-        console.log(err);
-    }
-    finally{
-        console.log("Rodar sempre");
+        console.error(err)
+
     }
 }
-start();
+ 
+ start()
+
+ // OU
+
+ async function start(){
+    const user = await fetch('https://api.github.com/users/maykbrito').then(r => r.json())
+    const repos = await fetch(user.repos_url).then (r => r.json())    
+    console.log(repos)
+ }
+ 
+ start()
 
