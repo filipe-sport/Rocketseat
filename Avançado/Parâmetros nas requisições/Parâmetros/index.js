@@ -22,7 +22,7 @@ No Navegador:
 
 - http://localhost:3030/?name=Filipe - como foi passado como req o parametro name, a informação que será passada como atributo, será mostrada no corpo (body)
 - tambem pode-se ser feita sem uso da variável http://localhost:3030/Filipe
-- e ainda passando no body da requisição
+- e ainda passando no body da requisição no insomnia
 {
     "name": "Filipe"
 }
