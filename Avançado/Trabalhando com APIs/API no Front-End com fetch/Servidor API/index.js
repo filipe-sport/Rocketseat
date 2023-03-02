@@ -3,7 +3,7 @@ const cors = require('cors')
 
 const app = express()
 
-app.listen(3030, () => console.log('Rodando na porta 3030!!\n Finalizar aperte Ctrl + C'))
+app.listen(5500, () => console.log('Rodando na porta 3030!!\n Finalizar aperte Ctrl + C'))
 
 app.use(cors())
 
