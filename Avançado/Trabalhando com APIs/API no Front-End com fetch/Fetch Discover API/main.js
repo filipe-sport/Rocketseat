@@ -22,3 +22,27 @@ function getUser (){
 }
 
 getUser()
+
+function addUser (newUser){
+    fetch(url,{
+        method: "POST",
+        body: JSON.stringify(newUser),
+        headers: {
+            "Content-Type": "application/json; charset=utf-8"
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        alertApi.textContent = data
+    })
+    .catch(error => console.log(error))
+}
+
+const newUser = {
+    name:"Olivia Zars",
+    avatar: "https://picsum.photos/200/300",
+    city:"Olinda"
+}
+addUser(newUser)
+
+
