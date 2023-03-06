@@ -22,7 +22,7 @@ function getUser(id){
     })
     .catch(error => console.error(error))
 }
-getUser(1)
+getUser(5)
 
 //  POST METHOD
 
@@ -42,24 +42,6 @@ addUsers(newUser)
 
 // PUT METHOD
 
-function updateUser(id, userUpdated) {
-    axios.put(`${url}/${id}`, userUpdated)
-    .then(response => console.log(response))
-    .catch(error => console.error(error))
+function updateUser(){
+    axios.put
 }
-
-const userUpdated ={
-    name: "Felix Costa",
-    avatar: "https://picsum.photos/200/300",
-    city:"Olinda"
-}
-updateUser(3, userUpdated)
-
-//METHOD DELETE
-
-function deleteUser(id){
-    axios.delete(`${url}/${id}`)
-   .then(response => console.log(response))
-   .catch(error => console.error(error))
-}
-deleteUser(19)
