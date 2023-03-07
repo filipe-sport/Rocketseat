@@ -1,5 +1,5 @@
 import { useState } from 'react'
-function Home() {
+export function Home() {
   return (
     <div>
       <h1>Lista de Presença</h1>
@@ -9,4 +9,4 @@ function Home() {
   )
 }
 
-export default Home
+
