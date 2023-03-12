@@ -22,7 +22,13 @@ export function Home() {
 
   return (
     <div className='container'>
-      <h1>Lista de Presença</h1>
+      <header>
+        <h1>Lista de Presença</h1>
+        <div>
+          <strong>Filipe</strong>
+          <img src="https://github.com/filipe-sport.png" alt="Foto perfil" />
+        </div>
+      </header>
       <input type="text" placeholder="Digite o nome..." 
         onChange={e => setStudentName(e.target.value)}
       />    
@@ -35,8 +41,12 @@ export function Home() {
     {
 
       students.map(student => (
-        <Card name = {student.name} time = {student.time} />
-      ))
+          <Card 
+            key = {student.time}
+            name = {student.name} 
+            time = {student.time} 
+          />
+        ))
       
     }  
     </div>
