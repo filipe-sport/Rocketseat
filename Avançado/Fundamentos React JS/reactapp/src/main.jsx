@@ -7,6 +7,7 @@ import { Home } from './pages/Home'
 // Importando CSS
 import './styles/global.css'
 
+
 /* ReactDOM.render is no longer supported
 
 ReactDOM.render(
