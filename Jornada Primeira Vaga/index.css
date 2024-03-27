@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cinzel', serif;
+}
+body{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;  
+  align-items: center; 
+  background-image: url(./src/img/background-image.jpg);
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+  width: 677px;
+  height: 114px;
+  margin: 200px 0 72px 0;
+}
+.title h1{
+  font-size: 64px;
+}
+.title p{
+  font-size: 20px;
+}
+.title span{
+  color: #DB2777;
+}
+
+.links a{
+    background: content-box;
+    border: transparent;
+    padding: 16px 32px;
+    font-size: 20px;
+    font-weight: bold;
+    gap: 8px;
+    
+}
+.links .travel{
+  background: #DB2777;
+  border-radius: 80px;
+  color: white;
+}
+
